@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.jay3165.garglibrary.AllMyOrderDescription">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tbl1"
+            android:layout_alignParentRight="true"
+            android:stretchColumns="1">
+
+            <TableRow>
+                <TextView
+                    android:textStyle="bold"
+                    android:text="STATUS"
+                    android:textSize="15dp"
+                    android:padding="3dip"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text=": cancled"
+                    android:layout_marginLeft="50dp"
+                    android:id="@+id/txtcancle"
+                    android:padding="3dip"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="ORDER NO."
+                    android:padding="3dip"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text=": 456453"
+                    android:layout_marginLeft="50dp"
+                    android:id="@+id/txtorderno"
+
+                    android:padding="3dip"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="TOTAL AMOUNT"
+                    android:padding="3dip"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:text=": ₹10000"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="50dp"
+                    android:id="@+id/txttotal"
+                    android:padding="3dip"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="ORDER TYPE"
+                    android:padding="3dip"/>
+                <TextView
+                    android:text=": COD"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="50dp"
+
+                    android:padding="3dip"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="SHIPPING CHARGE"
+                    android:padding="3dip"/>
+                <TextView
+
+                    android:textStyle="bold"
+                    android:text=": ₹0"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="50dp"
+                    android:padding="3dip"/>
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090"/>
+
+
+
+        </TableLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/tbl1"
+            android:layout_height="match_parent"
+            android:id="@+id/rvorder"
+            android:layout_above="@+id/relativeLayout">
+
+        </android.support.v7.widget.RecyclerView>
+        <RelativeLayout
+            android:background="#efeff2"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/relativeLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PAYABLE AMOUNT"
+                android:textSize="15dp"
+
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:id="@+id/txtamnt"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PAYABLE AMOUNT"
+                android:textSize="15dp"
+                android:textColor="#941305"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:id="@+id/txtamnt1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QTY"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:id="@+id/txtqty"
+                android:layout_below="@+id/txtamnt"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QTY"
+                android:textSize="15dp"
+                android:textColor="#941305"
+                android:textStyle="bold"
+                android:id="@+id/txtqty1"
+                android:layout_below="@+id/txtamnt"
+                android:layout_alignParentRight="true"/>
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+

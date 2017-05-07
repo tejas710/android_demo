@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_aboutus"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.jay3165.garglibrary.Aboutus">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WHAT WE ARE"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:id="@+id/txt1"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="          The purpose of developing this kind of Application is to facilitate everyone who is concern with Books of all Courses. The Application is developed for managing the records of All the books which is useful for all students.
+
+Moreover with the help of this system we can buy books by COD at Home where the Application is being implemented.
+
+This specification is intended for the designer, developer and maintainer of the system."
+            android:layout_below="@+id/txt1"
+            android:id="@+id/txt2"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            />
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

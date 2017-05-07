@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jay3165.garglibrary">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".login_activity"
+            android:label="Login"
+            android:screenOrientation="portrait" >
+
+        </activity>
+        <activity
+            android:name=".Registration_Activity"
+            android:label="Registration"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AllSemActivity"
+            android:label="Semesters"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".AllSubjectActivity"
+            android:label="Subjects"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".AllBookActivity"
+            android:label="Books"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".AllBookdetailsActivity"
+            android:label="Book Details"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".AllCartActivity"
+            android:label="Cart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AllCourseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".Aboutus"
+            android:label="About Us"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".search_book"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".OtpActivity" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".Checkout" />
+        <activity android:name=".ContactUs1"
+            android:label="ContactUS">
+
+            </activity>
+        <activity android:name=".new_confirm_password" />
+        <activity android:name=".Otpfor_forgetpass" />
+        <activity android:name=".ChangePassword" />
+        <activity android:name=".Regi" />
+        <activity android:name=".Myorder"
+            android:label="My Order"/>
+        <activity android:name=".AllMyOrderDescription"
+            android:label="My Order Details"></activity>
+    </application>
+
+</manifest>

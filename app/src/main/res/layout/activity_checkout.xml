@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_regi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        tools:context="com.example.jay3165.garglibrary.checkout">
+
+
+    <TextView
+
+            android:id="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Details-:"
+            android:textSize="30dp"/>
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/edtname"
+           android:textSize="20dp"
+           android:layout_below="@+id/t1"
+           android:textColor="#000000"
+           android:layout_marginRight="15dp"
+           android:layout_marginLeft="15dp"
+           android:layout_marginTop="5dp"
+           android:background="@drawable/edittext_border"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtaddress"
+            android:textSize="20dp"
+            android:layout_below="@+id/edtname"
+            android:textColor="#000000"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_border"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtcity"
+            android:textSize="20dp"
+            android:layout_below="@+id/edtaddress"
+            android:textColor="#000000"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_border"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtstate"
+            android:textSize="20dp"
+            android:layout_below="@+id/edtcity"
+            android:textColor="#000000"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_border"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtzip"
+            android:textSize="20dp"
+            android:layout_below="@+id/edtstate"
+            android:textColor="#000000"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_border"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtmob"
+            android:textSize="20dp"
+            android:layout_below="@+id/edtzip"
+            android:textColor="#000000"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_border"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnproceed"
+           android:layout_below="@+id/edtmob"
+            android:background="@drawable/buttonshapelogin_regi"
+            android:textAllCaps="false"
+            android:textColor="#fffefe"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Proceed"
+            />
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
+

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/linear"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+
+                android:id="@+id/imageView_bookimg" />
+        </LinearLayout>
+
+        <LinearLayout
+android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ScrollView
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="center"
+                        android:text="BookName"
+                        android:textColor="#155852"
+                        android:textStyle="bold"
+                        android:id="@+id/text1_bookdetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:gravity="center"
+                        android:text="Bookdetails"
+                        android:textColor="#155852"
+                        android:id="@+id/text2_bookdetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+
+
+                </LinearLayout>
+            </ScrollView>
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:gravity="center"
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/btn_minus"
+                android:text="-"
+                android:textColor="#FF2008"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:onClick="decreaseInteger"
+                android:background="@drawable/buttonshape"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+                <TextView
+
+                    android:text="1"
+                    android:textColor="#000000"
+
+                    android:id="@+id/txt_bookquant"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+                <Button
+                    android:id="@+id/btn_plus"
+                    android:text="+"
+
+                    android:textStyle="bold"
+                    android:textColor="#FF2008"
+                    android:textSize="15sp"
+                    android:onClick="increaseInteger"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/buttonshape"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    />
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:weightSum="100"
+
+          android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_weight="50"
+                android:text="pricefromserver"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:textColor="#800020"
+                android:background="#F5F5DC"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/txt_showprice" />
+            <TextView
+                android:layout_weight="50"
+                android:text="Add To Cart"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:background="#800020"
+                android:textColor="#F5F5DC"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/txt_addtocart" />
+
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

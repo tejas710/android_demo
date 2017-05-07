@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative1"
+    android:layout_gravity="center"
+    android:background="#000000"
+
+    android:padding="30dp"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <Button
+        android:text="Continue Shopping"
+        android:layout_width="200dp"
+        android:gravity="center"
+        android:background="#800020"
+        android:textColor="#F5F5DC"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+
+        android:id="@+id/btncontinueshopping" />
+
+    <Button
+        android:text="Go To Cart"
+        android:layout_width="200dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+       android:background="#F5F5DC"
+        android:textColor="#800020"
+        android:id="@+id/btngotocart"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btncontinueshopping"
+        android:layout_alignLeft="@+id/btncontinueshopping"
+        android:layout_alignStart="@+id/btncontinueshopping" />
+
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:id="@+id/relativeotp"
+    android:layout_gravity="center"
+    android:padding="30dp"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#F5F5DC"
+        android:text="Enter the code received"
+        android:textSize="18dp"
+        android:id="@+id/txtotp"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtotp"
+        android:textColor="#F5F5DC"
+        android:textSize="20dp"
+        />
+
+</RelativeLayout>
